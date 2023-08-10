@@ -1,4 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,109 +12,28 @@
 <link rel="stylesheet" href="/resources/css/main.css">
 <link rel="stylesheet" href="/resources/css/font.css">
 </head>
+<%@include file="../includes/header.jsp"%>
 <body>
 	
-	<%@include file="../includes/header.jsp"%>
-	
 	<div class="list_wrap">
-           <ul>
-               <li class="item item1">
-                   <div class="item-header">
-                   		<strong>나눔고딕코딩</strong>
-                       <p>네이버</p>
-                   </div>
-                   <div class="item-body">
-                       <p>Hello, World!</p>
-                   </div>
-                   <div class="item-footer">
-                       <a href="#">좋아요 버튼</a>
-                   </div>
-               </li>
-               
-               <li class="item item2">
-                   <div class="item-header">
-                   		<strong>D2Coding</strong>
-                       <p>네이버</p>
-                   </div>
-                   <div class="item-body">
-                       <p>
-                       	$(window).scroll(function(){ });
-                       </p>
-                   </div>
-                   <div class="item-footer">
-                       <a href="#">좋아요</a>
-                   </div>
-               </li>
-               
-               <li class="item item3">
-                   <div class="item-header">
-                   		<strong>이름이 들어갑니다.</strong>
-                       <p>제작자가 들어갑니다.</p>
-                   </div>
-                   <div class="item-body">
-                       <strong>설명이 들어갑니다.</strong>
-                   </div>
-                   <div class="item-footer">
-                       <a href="#">좋아요 버튼</a>
-                   </div>
-               </li>
-               
-               <li class="item item4">
-                   <div class="item-header">
-                   		<strong>이름이 들어갑니다.</strong>
-                       <p>제작자가 들어갑니다.</p>
-                   </div>
-                   <div class="item-body">
-                       <strong>설명이 들어갑니다.</strong>
-                   </div>
-                   <div class="item-footer">
-                       <a href="#">좋아요 버튼</a>
-                   </div>
-               </li>
-               
-               <li class="item item5">
-                   <div class="item-header">
-                   		<strong>이름이 들어갑니다.</strong>
-                       <p>제작자가 들어갑니다.</p>
-                   </div>
-                   <div class="item-body">
-                       <strong>설명이 들어갑니다.</strong>
-                   </div>
-                   <div class="item-footer">
-                       <a href="#">좋아요 버튼</a>
-                   </div>
-               </li>
-               
-               <li class="item item6">
-                   <div class="item-header">
-                   		<strong>이름이 들어갑니다.</strong>
-                       <p>제작자가 들어갑니다.</p>
-                   </div>
-                   <div class="item-body">
-                       <strong>설명이 들어갑니다.</strong>
-                   </div>
-                   <div class="item-footer">
-                       <a href="#">좋아요 버튼</a>
-                   </div>
-               </li>
-               
-               <li class="item item7">
-                   <div class="item-header">
-                   		<strong>이름이 들어갑니다.</strong>
-                       <p>제작자가 들어갑니다.</p>
-                   </div>
-                   <div class="item-body">
-                       <strong>설명이 들어갑니다.</strong>
-                   </div>
-                   <div class="item-footer">
-                       <a href="#">좋아요 버튼</a>
-                   </div>
-               </li>
-            
+        <ul>
+          <c:forEach items="${list}" var="font">
+              <li class="item item_${font.fid }">
+                  <div class="item-header">
+                  		<strong><c:out value="${font.name }"/></strong>
+                      <p><c:out value="${font.production }"/></p>
+                  </div>
+                  <div class="item-body">
+                      <p><c:out value="${font.coment }"/></p>
+                  </div>
+                  <div class="item-footer">
+                      <a href="#">좋아요 버튼</a>
+                  </div>
+              </li>
+           </c:forEach>
 		</ul>
 	</div>
 
-	<%@include file="../includes/footer.jsp"%>
-	
 </body>
+<%@include file="../includes/footer.jsp"%>
 </html>
