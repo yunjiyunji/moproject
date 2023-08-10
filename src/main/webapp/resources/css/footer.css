@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, li {
+    list-style: none;
+}
+footer {
+	height: 250px;
+    background-color: #353535;
+    color: #eaeaea;
+    font-weight: bold;
+}
+footer > div {
+	float: left;
+	padding : 70px;
+}
+
+footer .footer-center {
+	width: 800px;
+}
+
+footer .footer-content p {
+	margin: 0 0 5px 0;
+}
+
+footer .connect-with-us {
+	width: 150px;
+}
+
+footer .connect-with-us li {
+   margin-top: 10px;
+}
