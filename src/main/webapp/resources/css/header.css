@@ -9,7 +9,9 @@ a {
 ul, li {
     list-style: none;
 }
+
 header {
+	width: 100%;
     border-bottom: 1px solid #ddd;
 }
 header > div {
