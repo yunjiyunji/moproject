@@ -11,7 +11,7 @@
 	    	<div>
 		        <div class="footer-item footer-content">
 		            <h1 class="logo">
-		                <a href="#"><img src="img/logo.png" alt="모글코" ></a>
+		                <a href="#"><img src="/resources/img/mologo.png" alt="모글코" ></a>
 		            </h1>
 		            <p>모든 폰트의 저작권은 모두 각 폰트의 제작자/ 제작사에 있습니다.</p>
 		            <p>폰트에 대한 라이센스 문의는 제작자/ 제작사에 문의해주세요.</p>
