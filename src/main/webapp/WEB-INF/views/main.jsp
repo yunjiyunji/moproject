@@ -18,7 +18,7 @@
 	<div class="list_wrap">
         <ul>
           <c:forEach items="${list}" var="font">
-              <li class="item item_${font.fid }">
+              <li class="item item${font.fid }">
                   <div class="item-header">
                   		<strong><c:out value="${font.name }"/></strong>
                       <p><c:out value="${font.production }"/></p>
