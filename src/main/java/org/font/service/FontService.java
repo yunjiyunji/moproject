@@ -7,4 +7,7 @@ import org.font.domain.FontVO;
 public interface FontService {
 
 	public List<FontVO> getList();
+	
+	public FontVO get(int fid);
+	
 }

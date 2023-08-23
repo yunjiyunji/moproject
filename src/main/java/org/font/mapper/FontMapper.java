@@ -8,4 +8,6 @@ public interface FontMapper {
 	
 	public List<FontVO> getList();
 	
+	public FontVO read(int fid);
+	
 }

@@ -11,18 +11,27 @@ ul, li {
     list-style: none;
 }
 footer {
+	width:100%;
 	height: 250px;
-    background-color: #353535;
-    color: #eaeaea;
+    background-color: #e3e3e4;
+    color: #1a1a1a;
     font-weight: bold;
 }
 footer > div {
+	width: 90%;
+    min-width: 1000px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-content {
 	float: left;
 	padding : 70px;
 }
 
-footer .footer-center {
-	width: 800px;
+footer .logo img {
+    height: 30px;
+    margin-bottom: 10px;
 }
 
 footer .footer-content p {
@@ -30,7 +39,9 @@ footer .footer-content p {
 }
 
 footer .connect-with-us {
+	float: right;
 	width: 150px;
+	padding : 70px;
 }
 
 footer .connect-with-us li {

@@ -10,7 +10,7 @@
 	    <header>
 	        <div>
 	            <h1 class="logo">
-	                <a href="#"><img src="img/logo.png" alt="모글코" ></a>
+	                <a href="#"><img src="/resources/img/mologo.png" alt="모글코" ></a>
 	            </h1>
 	            <ul class="gnb">
 	                <li><a href="#">자주 묻는 질문</a></li>

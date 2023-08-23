@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.font-get {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.font-content-header {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.font-content-header .font-name {
+	font-size: 35px;
+	width: 500px;
+}
+
+.font-content-header .font-prod {
+	margin-top: 20px;
+	width: 500px;
+}
+
+.font-content-header .font-prod p{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.font-get a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #eee;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.font-get a:hover {
+    background: #325cb2;
+    color: #fff;
+}
+
+.font-content-body{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.font-content-body-1 {
+	margin-right: 40px;
+}
+
+.font-content-body-2 {
+	margin-left: 40px;
+}
+
+.font-content-body .title {
+	border-bottom : 1px solid #ddd;
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.font-content-body .title-2 {
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.font-preview p {
+	margin-top: 30px;
+}
+
+.font-license-box {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
