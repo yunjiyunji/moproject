@@ -23,4 +23,12 @@ public class FontServiceImpl implements FontService {
 		return fontmapper.getList();
 	}
 
+	@Override
+	public FontVO get(int fid) {
+		log.info("get......" + fid);
+		return fontmapper.read(fid);
+	}
+	
+	
+
 }
