@@ -14,23 +14,25 @@
 </head>
 <%@include file="../includes/header.jsp"%>
 <body>
-	
+
 	<div class="list_wrap">
-        <ul>
-          <c:forEach items="${list}" var="font">
-              <li class="item item${font.fid }">
-                  <div class="item-header">
-                  		<strong><c:out value="${font.name }"/></strong>
-                      <p><c:out value="${font.production }"/></p>
-                  </div>
-                  <div class="item-body">
-                      <p><c:out value="${font.coment }"/></p>
-                  </div>
-                  <div class="item-footer">
-                      <a href="#">좋아요 버튼</a>
-                  </div>
-              </li>
-           </c:forEach>
+		<ul>
+			<c:forEach items="${list}" var="font">
+				<li class="item item${font.fid }">
+					<div class="item-header">
+						<strong><c:out value="${font.name }" /></strong>
+						<p><c:out value="${font.production }" /></p>
+					</div>
+					<div class="item-body">
+						<p>
+							<c:out value="${font.coment }" />
+						</p>
+					</div>
+					<div class="item-footer">
+						<a href="#">좋아요 버튼</a>
+					</div>
+				</li>
+			</c:forEach>
 		</ul>
 	</div>
 
