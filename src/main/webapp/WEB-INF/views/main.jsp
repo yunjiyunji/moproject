@@ -12,30 +12,37 @@
 <link rel="stylesheet" href="/resources/css/main.css">
 <link rel="stylesheet" href="/resources/css/font.css">
 </head>
-<%@include file="../includes/header.jsp"%>
 <body>
 
+<%@include file="../includes/header.jsp"%>
+
 	<div class="list_wrap">
+			
 		<ul>
 			<c:forEach items="${list}" var="font">
-				<li class="item item${font.fid }">
-					<div class="item-header">
-						<strong><c:out value="${font.name }" /></strong>
-						<p><c:out value="${font.production }" /></p>
-					</div>
-					<div class="item-body">
-						<p>
-							<c:out value="${font.coment }" />
-						</p>
-					</div>
-					<div class="item-footer">
-						<a href="#">좋아요 버튼</a>
-					</div>
+				<li class="item item${font.fid }" data-fid="${font.fid}">
+						<div class="item-header">
+							<strong><c:out value="${font.name }" /></strong>
+							<p><c:out value="${font.production }" /></p>
+						</div>
+						<div class="item-body">
+							<p>
+								<c:out value="${font.coment }" />
+							</p>
+						</div>
+						<div class="item-footer">
+							<button class="like-button">좋아요 버튼</button>
+						</div>
 				</li>
 			</c:forEach>
 		</ul>
+		
 	</div>
+	
+<%@include file="../includes/footer.jsp"%>
 
 </body>
-<%@include file="../includes/footer.jsp"%>
+
+<script src="../../../resources/js/main.js"></script>
+
 </html>
